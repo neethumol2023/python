@@ -1,0 +1,17 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for i in product_list %}
+<br>{{i.name}}<br>
+{{i.des}}<br>
+{{i.prize}}<br>
+<img src="{% static 'product/'|add:product.image %}" width="250" height="250">
+{% endfor %}
+
+</body>
+</html>
